@@ -74,6 +74,7 @@
 const card=store.display;
 
 
+
  
 //  for(let card in arr){
 //   if(card.title.indexOf(store.lastName)!=-1){

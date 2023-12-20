@@ -3,7 +3,7 @@
     <div class="card" v-for="course in courses" :key="course.id" >
         
       <div class="one">
-        <NuxtLink :to="'/about/'+random"  >
+        <NuxtLink :to="'/about/'+course.id"  >
                       <img :width=course.width :height=course.height :src="course.pictureUrl" @click="() => {store.img=course.pictureUrl;console.log(store.img)}"/> 
                     </NuxtLink>
                     </div>

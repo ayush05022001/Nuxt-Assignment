@@ -35,6 +35,8 @@ export default{
  const arr=cards.data.value;
  store.flag=false;
       store.lastName=this.inputValue;
+      this.inputValue="";
+      
  
  arr.forEach(function(course){
           if(course.title.indexOf(store.lastName)!=-1){
@@ -43,6 +45,7 @@ export default{
         })
 //  console.log(store.display);
  store.update(arr2);
+ 
       router.push('/search');
       
       
