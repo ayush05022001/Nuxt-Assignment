@@ -47,6 +47,7 @@ export default{
  store.update(arr2);
  
       router.push('/search');
+        
       
       
       console.log(store.display,"------->");

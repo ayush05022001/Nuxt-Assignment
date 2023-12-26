@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   },
   modules:[
     '@pinia/nuxt',
+   
   ],
   postcss: {
     plugins: {
@@ -22,4 +23,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  
+  
+ 
 })

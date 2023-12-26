@@ -26,6 +26,15 @@
 const store=useUserStore();
 
 const cards=await useFetch('/api/cards');
+// const detail=await $fetch('/api/card',{
+    
+//     params:{
+//         card:store.img
+//     }
+    
+// })
+
+// console.log(detail);
 
 const arr=cards.data.value;
 
