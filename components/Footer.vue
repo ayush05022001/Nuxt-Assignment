@@ -7,7 +7,7 @@
                 <ul class="items">
                     <li><NuxtLink >About</NuxtLink></li>
                     <li><a>Terms and Conditions</a></li>
-                    <li><NuxtLink to="/privacy">Privacy Policy</NuxtLink></li>
+                    <li><NuxtLink to="/privacy" :prefetch=false>Privacy Policy</NuxtLink></li>
                     <li><a href="/contact">Contact Us</a></li>
 
                 </ul>
