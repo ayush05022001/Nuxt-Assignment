@@ -1,3 +1,11 @@
+// import express from 'express';
+
+// const app=express();
+
+
+// app.get('/api/card/:car',(req,res) =>{
+//  return cards.find(pcard => pcard===car);
+// })
 
 
 const cards=[
@@ -35,7 +43,7 @@ const cards=[
     
     },
     {
-      id: 3,
+      id: 4,
       title: "The Python Course: build web application ",
       time: "3 hours 30 minutes",
       width:"266px",
@@ -46,7 +54,7 @@ const cards=[
     
     },
     {
-        id: 1,
+        id: 5,
         title: "Applying JavaScript and using the console.",
         time: "1 hour 30 minutes",
         width:"266px",
@@ -57,7 +65,7 @@ const cards=[
       
       },
       {
-        id: 1,
+        id: 6,
         title: "WordPress:complete WordPress theme and plugin",
         time: "2 hours 30 minutes",
         width:"266px",
@@ -68,7 +76,7 @@ const cards=[
       
       },
       {
-        id: 2,
+        id: 7,
         title: "CSS: ultimate CSS course from beginner to advanced",
         time: "1 hour 30 minutes",
         width:"266px",
@@ -79,7 +87,7 @@ const cards=[
       
       },
       {
-        id: 3,
+        id: 8,
         title: "Gatsby JS: build blog with GraphQL and React",
         time: "3 hours 56 minutes",
         width:"266px",
@@ -93,11 +101,15 @@ const cards=[
     
 ];
 
-export default defineEventHandler((event)  =>{
+export default defineEventHandler(async (event)  =>{
     const { car } = event.context.params;
     console.log(car);
+    const data= cards.find(pcard => pcard.id==car);
+    console.log("cards",JSON.stringify(cards));
     
-    return cards.find(pcard => pcard===car);
+    console.log("data" ,JSON.stringify(data));
+    
+    return data;
 })
 
 

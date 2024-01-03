@@ -26,13 +26,7 @@
 const store=useUserStore();
 
 const cards=await useFetch('/api/cards');
-// const detail=await $fetch('/api/card',{
-    
-//     params:{
-//         card:store.img
-//     }
-    
-// })
+const detail=await useFetch('/api/card/3')
 
 // console.log(detail);
 
@@ -45,7 +39,7 @@ arr.forEach(function(course){
           }
         });
 
-console.log(courses.pictureUrl);
+// console.log(courses.pictureUrl);
 
 
 </script>
